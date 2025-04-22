@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mysteriousnumber</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+      <h1>Bienvenue sur Mysterious Number</h1>
+      <p>Le jeu numéro 1 chez les developpeurs</p>
+
+    <script src="premierscript.js"></script>
+
+
+    <img src="imagenumero.jpg" alt="backgroundgimage" class="imagenumero">
+  <div class="container">
+    <div class="input-box">
+      <label for="guess">Entrer un chiffre (1 à 10) :</label><br><br>
+      <input type="number" id="guess" min="1" max="10" />
+    </div>
+
+
+    <div class="button-box">
+      <button onclick="tester()">Tester</button>
+      <button id="rejouer" onclick="resetJeu()" style="display: none;">Rejouer</button>
+    </div>
+
+
+    <div class="result-box">
+      <p>Trouver le numéro mystère entre 1 et 10</p>
+      <div class="result" id="resultat"></div>
+    </div>
+  </div>
+    </body>
+</html>
