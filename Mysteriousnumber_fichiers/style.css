@@ -5,11 +5,11 @@ body {
   background-image: url('imagenumero.jpg');
   background-size: cover;
   background-position: center;
-  position: relative; 
-  min-height: 100vh;  
-  justify-content: center;  
-  align-items: center;     
-  overflow: hidden;  
+  position: relative;  /* Permet de positionner les boîtes par rapport à l'image */
+  min-height: 100vh;  /* S'assure que le body prend toute la hauteur de l'écran */
+  justify-content: center;  /* Centrer horizontalement le contenu */
+  align-items: center;      /* Centrer verticalement le contenu */
+  overflow: hidden;  /* Évite de voir des éléments qui débordent de l'écran */
   z-index: 100;
 
 }
@@ -22,18 +22,18 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  align-items: center; 
-  justify-content: center; 
-  position: relative; 
-  margin-top: 50px; 
+  align-items: center; /* Aligne verticalement les boîtes */
+  justify-content: center; /* Centrer horizontalement les boîtes */
+  position: relative; /* Permet de placer les boîtes sur l'image */
+  margin-top: 50px; /* Décale un peu les boîtes vers le bas */
   width: 90%;
-  max-width: 1200px; 
+  max-width: 1200px; /* Limite la largeur totale du conteneur */
   opacity: 0.5;
   z-index: -1;
 }
 
 .input-box, .button-box, .result-box {
-  background: rgba(255, 255, 255, 0.8); 
+  background: rgba(255, 255, 255, 0.8);  /* Fond plus opaque pour une meilleure lisibilité */
   border: 2px solid black;
   box-sizing: border-box;
   padding: 10px;
@@ -72,7 +72,7 @@ body {
 .result-box {
   width: 95%;
   max-width: 580px;
-  height: 300px;
+  height: 500px;
   padding: 15px;
   color: blue;
 }
