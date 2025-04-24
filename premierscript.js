@@ -1,3 +1,6 @@
+let attempts = 0; 
+const maxAttempts = 3; 
+
 function tester() {
   const guess = document.getElementById('guess').value;
   const resultat = document.getElementById('resultat');
@@ -13,8 +16,6 @@ function tester() {
       resultat.textContent = "Veuillez entrer un numéro entre 1 et 10.";
   }
 
-let attempts = 0; 
-const maxAttempts = 3; 
 
 
   console.log("Jeu en cours...");
@@ -33,7 +34,7 @@ const maxAttempts = 3;
 
 
 function resetJeu() {
-
+  
   if (attempts < maxAttempts) {
     attempts++; 
 
